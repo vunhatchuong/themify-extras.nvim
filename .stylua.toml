@@ -1,0 +1,7 @@
+# https://github.com/JohnnyMorganz/StyLua#options
+column_width = 80
+call_parentheses = "Always"
+line_endings = "Unix"
+quote_style = "ForceDouble"
+indent_width = 4
+indent_type = "Spaces"
