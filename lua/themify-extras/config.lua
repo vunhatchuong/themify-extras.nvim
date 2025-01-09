@@ -6,6 +6,11 @@ M.defaults = {
         enable = false,
         daily = false,
     },
+    daylight = {
+        enable = false,
+        day_start = 8,
+        night_start = 16,
+    },
 }
 
 ---@type ThemifyExtrasConfig
