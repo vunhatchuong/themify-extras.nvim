@@ -7,7 +7,13 @@ local M = {}
 local themify_last_change = vim.fn.stdpath("data") .. "/themify_last_change"
 
 function M.randomize()
-    local current_theme_id = Themify.get_current().colorscheme_id
+    local current_theme = Themify.get_current()
+    if current_theme == nil then
+        vim.notify("Please install themes through :Themify")
+        return
+    end
+
+    local current_theme_id = current_theme.colorscheme_id
     local number_of_themes = #Manager.colorschemes
 
     math.randomseed(os.time())
