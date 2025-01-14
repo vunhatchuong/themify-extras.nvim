@@ -5,7 +5,7 @@ A [themify.nvim](https://github.com/LmanTW/themify.nvim) plugin that provides ex
 ## Features
 
 - [x] Randomize theme.
-- [ ] Change theme based on day or night.
+- [x] Change theme based on day or night.
 
 ## Installation
 
@@ -25,10 +25,14 @@ These are the default values, you can view it directly in [config.lua](./lua/the
 
 ```lua
 {
-    ---@type ThemifyExtrasConfig
     randomize = {
         enable = false, -- Uses `:RandomizeTheme`
         daily = false, -- Randomize theme everyday
+    },
+    daylight = {
+        enable = false,
+        day_start = 8,
+        night_start = 16,
     },
 }
 ```

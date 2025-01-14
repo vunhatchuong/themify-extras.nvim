@@ -8,13 +8,6 @@ function M.setup(user_opts)
 
     local Config = require("themify-extras.config")
     Config.setup(user_opts)
-
-    if Config.options.randomize.enable then
-        local Randomize = require("themify-extras.modules.randomize")
-        Randomize.setup(Config.options.randomize)
-    end
-    local Daylight = require("themify-extras.modules.daylight")
-    Daylight.setup(Config.options.daylight)
 end
 
 return M
